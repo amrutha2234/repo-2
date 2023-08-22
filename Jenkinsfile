@@ -3,7 +3,8 @@ pipeline {
 
     environment {
         // Define environment variables for your Git repository and ECR.
-        GIT_REPO_URL = 'https://github.com/amrutha2243/repo-2.git'
+        GIT_REPO_URL = 'git@github.com:amrutha2243/repo-2.git
+'
         ECR_REGISTRY = 'ECR_REGISTRY'
         IMAGE_NAME = 'img1'
     }
