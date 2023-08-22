@@ -21,7 +21,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 // Build the Docker image
-                sh "docker build -t ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} ."
+                sh "docker build -t ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} 
             }
         }
 
