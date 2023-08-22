@@ -21,7 +21,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 // Build the Docker image
-                sh "docker build -t ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} 
+                sh "docker build -t ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}" 
             }
         }
 
@@ -30,7 +30,7 @@ pipeline {
         stage('Push to ECR') {
             steps {
                 // Push the Docker image to ECR
-		sh "docker push ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}
+		sh "docker push ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}"
         }
     
 }
