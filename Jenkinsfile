@@ -12,7 +12,7 @@ pipeline {
         stage('Clone Code') {
             steps {
                 // Checkout code from Git repository.
-                git url: "${GIT_REPO_URL}", credentialsId: 'prvtkey'
+                git branch: 'main', git url: "${GIT_REPO_URL}", credentialsId: 'prvtkey'
             }
         }
 
